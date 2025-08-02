@@ -12,3 +12,5 @@
 ```lilypond
 \time 6/8  % seis por oito
 ```
+
+# [Início](../README.md)

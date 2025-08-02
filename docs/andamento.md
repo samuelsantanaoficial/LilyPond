@@ -9,3 +9,5 @@
 ```lilypond
 \tempo "Allegro"
 ```
+
+# [Início](../README.md)

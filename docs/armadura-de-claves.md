@@ -8,3 +8,5 @@
 ```lilypond
 \key a \minor   % Lá menor
 ```
+
+# [Início](../README.md)

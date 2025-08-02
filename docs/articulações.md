@@ -27,3 +27,5 @@ c4-.
 ```lilypond
 e2->
 ```
+
+# [Início](../README.md)

@@ -40,3 +40,5 @@ b64  % semifusa
 c4.  % semínima pontuada
 d8.  % colcheia pontuada
 ```
+
+# [Início](../README.md)
