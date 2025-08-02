@@ -1,4 +1,4 @@
-# LilyPond para Iniciantes
+# LilyPond 
 
 ## Introdução
 
@@ -39,6 +39,7 @@ LilyPond é uma linguagem de marcação para partitura. Esta documentação foca
 
 ```lilypond
 \time 4 = 60  % 60 BPM
+\tempo "Lento" % 
 ```
 
 ## Notas
@@ -98,7 +99,7 @@ c4 ~ c4  % Sustenta o som da mesma nota
 ## Arpejo
 
 ```lilypond
-<e g c'>4\arpeggio  % sinal de arpejo
+<e g c'>4 \arpeggio  % sinal de arpejo
 ```
 
 ## Dinâmicas
@@ -157,6 +158,7 @@ e2->  % nota acentuada
 \header {
   title = "Título da Música"
   composer = "Nome do compositor"
+  subtitle = "Subtítulo"
 }
 ```
 
