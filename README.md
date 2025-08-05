@@ -75,6 +75,11 @@ Para notas pontuadas:
 <img width="483" height="142" alt="image" src="https://github.com/user-attachments/assets/e950ab73-14a9-4ae4-b5b7-1788e068800f" />
 
 ### Bemol & Sustenido
+- `is` Sustenido
+- `es` Bemol
+- `isis` Dobrado sustenido
+- `eses` Dobrado bemol
+- `!` Bequadro
 ```lilypond
 \version "2.24.1"
 
