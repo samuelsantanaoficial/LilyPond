@@ -8,7 +8,7 @@
   right-margin = 10\mm
   
   % Espaçamento entre sistemas com distância fixa
-  system-system-spacing = #'((basic-distance . 16))
+  system-system-spacing = #'((basic-distance . 24))
   
   tagline = \markup {
     \fontsize #-2 "© 2025 Samuel Santana | LilyPond 2.24.1"
@@ -18,6 +18,7 @@
 global = {
   \key g \major
   \time 3/4
+  \tempo "Moderato"
 }
 
 \header {
@@ -27,7 +28,7 @@ global = {
 }
 
 soprano = \relative { 
-  \mark \markup { \bold \box "A" }
+  \hide\mark \markup { \bold \box "A" }
   \repeat volta 2 {
     <b d>4 -4 -3 <b d>8 <b d> <b d> <b d>
     <b d>8.-2 -1 ^"C III ________" g'16-1 d4 r
@@ -69,7 +70,7 @@ alto = \relative {
   \repeat volta 2 {
     a8 -0 \mf d -0 c -3 d c d
     g,8 -3 d' -0 b -2 d b d
-    fis,8 -0 d' -0 c -3 d c d
+    fis,8 -2 d' -0 c -3 d c d
     g,8 -3 d' -0 b -2 d b d
     \break
     c8 \< -3 g' -0 e -1 g \! e g
@@ -82,17 +83,17 @@ alto = \relative {
 
 \score {
   \new StaffGroup <<
-    \new TabStaff \with { 
-      stringTunings = #guitar-tuning 
-    }
-    <<
+    \new Staff <<
       \set Staff.midiInstrument = #"acoustic guitar (nylon)"
       \global
-      \clef "tab"
-      \new TabVoice = "soprano" { \voiceOne \soprano }
-      \new TabVoice = "alto" { \voiceTwo \alto }
+      \clef "treble_8"
+      \new Voice = "soprano" { \voiceOne \soprano }
+      \new Voice = "alto" { \voiceTwo \alto }
     >>
   >>
   \layout { indent = 0 }
-  \midi { \tempo 4 = 114 }
+  \midi { 
+    \tempo 4 = 114 
+    midiComposer = "Samuel Santana" 
+  }
 }
