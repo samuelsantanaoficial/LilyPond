@@ -74,6 +74,17 @@ Para notas pontuadas:
 ```
 <img width="483" height="142" alt="image" src="https://github.com/user-attachments/assets/e950ab73-14a9-4ae4-b5b7-1788e068800f" />
 
+### Pausas
+Usando a letra `r`.
+```lilypond
+\version "2.24.1"
+
+\score {
+  \relative { r1 r2 r4 r8 r16 r32 r64 }
+}
+```
+
+
 ### Bemol & Sustenido
 - `is` Sustenido
 - `es` Bemol
@@ -91,10 +102,23 @@ Para notas pontuadas:
 <img width="421" height="126" alt="image" src="https://github.com/user-attachments/assets/44d39c39-388e-47a1-879a-b93866a2be89" />
 
 
+### Ligadura
+Para ligadura de frase use `(` depois da primeira nota e `)` depois de última nota
 ```lilypond
+\version "2.24.1"
+
+\score {
+  \relative { c'4 ( d e ) f }
+}
 ```
 
+Para ligadura de valor use `~` entre duas notas com a mesma afinação
 ```lilypond
+\version "2.24.1"
+
+\score {
+  \relative { c'4 d ~ d e }
+}
 ```
 
 ```lilypond
