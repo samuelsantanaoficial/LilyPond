@@ -1,6 +1,6 @@
 # LilyPond
 
-## Primeiros passos:
+## Comandos básicos:
 
 ### Score
 ```lilypond
@@ -83,6 +83,7 @@ Usando a letra `r`.
   \relative { r1 r2 r4 r8 r16 r32 r64 }
 }
 ```
+<img width="669" height="124" alt="image" src="https://github.com/user-attachments/assets/dcea10c4-1070-4de7-a9c7-58080cd98b71" />
 
 
 ### Bemol & Sustenido
@@ -111,6 +112,7 @@ Para ligadura de frase use `(` depois da primeira nota e `)` depois de última n
   \relative { c'4 ( d e ) f }
 }
 ```
+<img width="291" height="125" alt="image" src="https://github.com/user-attachments/assets/06d759f5-7193-40dc-83fe-b25d7225aa30" />
 
 Para ligadura de valor use `~` entre duas notas com a mesma afinação
 ```lilypond
@@ -120,6 +122,7 @@ Para ligadura de valor use `~` entre duas notas com a mesma afinação
   \relative { c'4 d ~ d e }
 }
 ```
+<img width="300" height="133" alt="image" src="https://github.com/user-attachments/assets/981cbb5b-5d04-4b06-82ab-028b57889027" />
 
 ```lilypond
 ```
