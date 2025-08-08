@@ -6,10 +6,10 @@
   bottom-margin = 10\mm
   left-margin = 10\mm
   right-margin = 10\mm
-  
+
   % Espaçamento entre sistemas com distância fixa
   system-system-spacing = #'((basic-distance . 24))
-  
+
   tagline = \markup {
     \fontsize #-2 "© 2025 Samuel Santana | LilyPond 2.24.1"
   }
@@ -27,10 +27,11 @@ global = {
   subtitle = "from Finale, Act I \"don giovanni\" (Don Juan)"
 }
 
-soprano = \relative { 
+soprano = \relative {
   \hide\mark \markup { \bold \box "A" }
+  \set fingeringOrientations = #'(left)
   \repeat volta 2 {
-    <b d>4 -4 -3 <b d>8 <b d> <b d> <b d>
+    <b-4 d-3>4 <b d>8 <b d> <b d> <b d>
     <b d>8.-2 -1 ^"C III ________" g'16-1 d4 r
     <a c>4 -2 -1 <a c>8 <a c> <a c> <a c>
     d16 -4 c -1 (b) -0 c <g b>4 r4
@@ -55,6 +56,7 @@ soprano = \relative {
 }
 
 alto = \relative {
+  \set fingeringOrientations = #'(left)
   \repeat volta 2 {
     g,4 -2 \mf b -1 d -0
     g4._\4 -3 g8\hide_\4 b\hide_\3 g\hide_\4
@@ -63,7 +65,7 @@ alto = \relative {
     \break
     a4 -0 a8 a a a
     a4 -0 a'8 -1 d, -0 d d
-    g,4 -2 a -0 a 
+    g,4 -2 a -0 a
     d4_\5 -3 a -0 d_\5
     \break
   }
@@ -84,6 +86,7 @@ alto = \relative {
 \score {
   \new StaffGroup <<
     \new Staff <<
+      \set fingeringOrientations = #'(left)
       \set Staff.midiInstrument = #"acoustic guitar (nylon)"
       \global
       \clef "treble_8"
@@ -91,9 +94,11 @@ alto = \relative {
       \new Voice = "alto" { \voiceTwo \alto }
     >>
   >>
-  \layout { indent = 0 }
-  \midi { 
-    \tempo 4 = 114 
-    midiComposer = "Samuel Santana" 
+  \layout {
+    indent = 0
+  }
+  \midi {
+    \tempo 4 = 114
+    midiComposer = "Samuel Santana"
   }
 }
