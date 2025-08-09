@@ -13,7 +13,8 @@
   ragged-last = ##f     % Força o último sistema a ocupar largura total
   ragged-bottom = ##t   % Permite página "desalinhada" no final
 
-  tagline = "© 2025 Samuel Santana | LilyPond 2.24.1"
+% tagline = "© 2025 Samuel Santana | LilyPond 2.24.1"
+  tagline = ##f
 }
 
 global = {
