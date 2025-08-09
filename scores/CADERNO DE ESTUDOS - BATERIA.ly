@@ -9,13 +9,20 @@
   inner-margin = 18\mm  % Margem interna (lado da encadernação)
   outer-margin = 12\mm  % Margem externa
   two-sided = ##t       % Ativa layout frente e verso
-% indent = 0            % Remove a identação do primeiro sistema
   ragged-last = ##f     % Força o último sistema a ocupar largura total
   ragged-bottom = ##t   % Permite página "desalinhada" no final
 
-% tagline = "© 2025 Samuel Santana | LilyPond 2.24.1"
   tagline = ##f
+
+  tocTitleMarkup = \markup \column { \null \fill-line { \null \huge \bold "Índice"  \null } \null }
+  
+  tocItemMarkup = \markup \fill-line { \fromproperty #'toc:text \fromproperty #'toc:page }
+  
+  tocItemMarkup = \tocItemWithDotsMarkup
+
 }
+
+
 
 global = {
   \set DrumStaff.drumStyleTable = #weinberg-drums-style
@@ -36,11 +43,15 @@ global = {
       %\fontsize #24 "𝄢"
       %\fontsize #20 "𝄞"
       \vspace #10
-      "© 2025 Real Sigma Music"
+      "© 2025 Real Sigma Music | LilyPond 2.24.1"
     }
   }
   \pageBreak
+  
+  \markuplist \table-of-contents
+  \pageBreak
 
+  \tocItem \markup "Estudo 01 (Funck)"
   \score {
     \new DrumStaff <<
       \global
@@ -74,6 +85,7 @@ global = {
 
   \markup \vspace #1
 
+  \tocItem \markup "Estudo 02 (Rock)"
   \score {
     \new DrumStaff <<
       \global
@@ -107,6 +119,7 @@ global = {
 
   \markup \vspace #1
 
+  \tocItem \markup "Estudo 03"
   \score {
     \new DrumStaff <<
       \global
@@ -142,6 +155,7 @@ global = {
 
   \pageBreak
 
+  \tocItem \markup "Estudo 04 (Pop)"
   \score {
     \new DrumStaff <<
       \global
@@ -175,6 +189,7 @@ global = {
 
   \markup \vspace #1
 
+  \tocItem \markup "Estudo 05 (Pop & Rock)"
   \score {
     \new DrumStaff <<
       \global
@@ -208,12 +223,13 @@ global = {
 
   \markup \vspace #1
 
+  \tocItem \markup "Estudo 06"
   \score {
     \new DrumStaff <<
       \global
       \clef "percussion"
       \set Staff.instrumentName = \markup \bold \fontsize #2 "06."
-      \tempo 4 = 120
+      \tempo 4 = 105
       \new DrumVoice {
         \voiceOne
         \drummode {
@@ -243,6 +259,7 @@ global = {
 
   \pageBreak
 
+  \tocItem \markup "Estudo 07"
   \score {
     \new DrumStaff <<
       \global
@@ -275,11 +292,70 @@ global = {
   }
 
   \markup \vspace #1
-}
+  
+  \tocItem \markup "Estudo 08"
+  \score {
+    \new DrumStaff <<
+      \global
+      \clef "percussion"
+      \set Staff.instrumentName = \markup \bold \fontsize #2 "08."
+      \tempo 4 = 146
+      \new DrumVoice {
+        \voiceOne
+        \drummode {
+          cymc4 hho hh hh
+          hh4 hh hh hh
+          \break
+          hh4 hh hh hh
+          hh4 hh hh hh
+          \bar "|."
+        }
+      }
+      \new DrumVoice {
+        \voiceTwo
+        \drummode {
+          bd4_\mf <bd sn> bd <bd sn>
+          bd4 <bd sn> bd <bd sn>
+          \break
+          bd4 <bd sn> bd <bd sn>
+          bd4 <bd sn> bd <bd sn>
+          \bar "|."
+        }
+      }
+    >>
+  }
 
-\layout {
-  \context {
-    \Score
-    \override NonMusicalPaperColumn.padding = #8
+  \markup \vspace #1
+  
+  \tocItem \markup "Estudo 09 (Ballad)"
+  \score {
+    \new DrumStaff <<
+      \global
+      \clef "percussion"
+      \set Staff.instrumentName = \markup \bold \fontsize #2 "09."
+      \tempo 4 = 67
+      \new DrumVoice {
+        \voiceOne
+        \drummode {
+          cymc8 hh hh hh hh hh hh hh
+          hh hh hh hh hh hh hh hh
+          \break
+          hh hh hh hh hh hh hh hh
+          hh hh hh hh hh hh hh hh
+          \bar "|."
+        }
+      }
+      \new DrumVoice {
+        \voiceTwo
+        \drummode {
+          bd4\mf sn bd sn
+          bd4 sn bd sn
+          \break
+          bd4 sn bd sn
+          bd4 sn bd sn
+          \bar "|."
+        }
+      }
+    >>
   }
 }
