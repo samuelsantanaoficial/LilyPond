@@ -21,7 +21,6 @@ barre = #(define-music-function (txt notes) (string? ly:music?) #{
   % Espaçamento entre sistemas com distância fixa
   system-system-spacing = #'((basic-distance . 24))
 
-  tagline = \markup \fontsize #-2 "© 2025 Samuel Santana | LilyPond 2.24.1"
 }
 
 global = {
