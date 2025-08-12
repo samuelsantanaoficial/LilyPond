@@ -19,7 +19,7 @@
 
 soprano = {
   \set fingeringOrientations = #'(left)
-  \mark \markup \rounded-box \bold "A"
+  \mark \default
   \repeat volta 2 {
     <d'-4>4 g8 <a-2> b <c'-1>
     <d'-4>4 <g-0> g 
@@ -30,7 +30,7 @@ soprano = {
     <c'-1>4 <d'-4>8 c' b <a-2>
     b4 <c'-1>8 b <a-2> g
     <fis-2>4 g8 <a-2> b g
-    \acciaccatura {b8} <a-2>2.
+    <b-0>8 <a-2>8 ~ a2
     \break 
     
     <d'-4>4 g8 <a-2> b <c'-1>  
@@ -46,7 +46,7 @@ soprano = {
     \break
   }
 
-  \mark \markup \rounded-box \bold "B"
+  \mark \default
   \repeat volta 2 {
     <b'-4>4 <g'-1>8 <a'-3> b' g' 
     <a'-4>4 <d'-1>8 <e'-4>\2 <fis'-1> <d'-1> 
@@ -60,7 +60,7 @@ soprano = {
     <d'-4>2. 
     \break
 
-    \mark \markup \rounded-box \bold "C"
+    \mark \default
     <d'-3>4 <g-0>8 <fis-4> g4 
     <e'-0>4 <g-0>8 <fis-4> g4 
     <d'-4>4 <c'-1> <b-0> 
@@ -122,6 +122,7 @@ alto = {
   \new StaffGroup <<
     \new Staff <<
       \set Staff.midiInstrument = #"acoustic guitar (nylon)"
+      \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
       \time 3/4
       \key g \major
       \clef "treble_8"

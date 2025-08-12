@@ -36,7 +36,7 @@ global = {
 }
 
 soprano = \relative {
-  \mark \markup \bold \rounded-box "A" 
+  \mark \default 
   \set fingeringOrientations = #'(left)
   \repeat volta 2 {
     <b-4 d-3>4 <b d>8 <b d> <b d> <b d>
@@ -48,7 +48,7 @@ soprano = \relative {
     <b-0 g'-3>8. <e-0>16 <fis,-2 d'-1>4 <e-2 cis'-3>4
     <fis-2 d'-1>2 r4
   }
-  \mark \markup \bold \rounded-box "B"
+  \mark \default
   \repeat volta 2 {
     <fis'-1>4 fis8 fis fis fis
     g8. <d-4>16 d4 r
@@ -90,6 +90,7 @@ alto = \relative {
     \new Staff <<
       \set fingeringOrientations = #'(left)
       \set Staff.midiInstrument = #"acoustic guitar (nylon)"
+      \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
       \global
       \clef "treble_8"
       \new Voice = "soprano" { \voiceOne \soprano }

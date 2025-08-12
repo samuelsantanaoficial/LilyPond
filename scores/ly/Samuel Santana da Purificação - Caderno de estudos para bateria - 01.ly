@@ -7,13 +7,13 @@
 \paper {
   #(set-paper-size "a5") % Tamanho do papel (A5)
   two-sided = ##t        % Ativa margens diferentes para páginas pares/ímpares
-  top-margin = 10\mm
-  bottom-margin = 10\mm
+  top-margin = 10\mm     % Margem superior
+  bottom-margin = 10\mm  % Margem Inferior
   inner-margin = 15\mm   % Margem interna (lado da encadernação)
   outer-margin = 10\mm   % Margem externa
   binding-offset = 5\mm  % Offset adicional para não cortar na encadernação
-  ragged-last = ##f     % Força o último sistema a ocupar largura total
-  ragged-bottom = ##t   % Permite página "desalinhada" no final
+  ragged-last = ##f      % Força o último sistema a ocupar largura total
+  ragged-bottom = ##t    % Permite página "desalinhada" no final
 
   tagline = ##f
 
@@ -74,7 +74,7 @@ global = {
       \new DrumVoice {
         \voiceTwo
         \drummode {
-          bd4\mf sn bd sn
+          bd4 sn bd sn
           bd4 sn bd sn
           \break
           bd4 sn bd sn
@@ -108,7 +108,7 @@ global = {
       \new DrumVoice {
         \voiceTwo
         \drummode {
-          bd8_\mf bd sn4 bd8 bd sn4
+          bd8 bd sn4 bd8 bd sn4
           bd8 bd sn4 bd8 bd sn4
           \break
           bd8 bd sn4 bd8 bd sn4
@@ -142,7 +142,7 @@ global = {
       \new DrumVoice {
         \voiceTwo
         \drummode {
-          bd4_\mf sn bd8 bd sn4
+          bd4 sn bd8 bd sn4
           bd4 sn bd8 bd sn4
           \break
           bd4 sn bd8 bd sn4
@@ -178,7 +178,7 @@ global = {
       \new DrumVoice {
         \voiceTwo
         \drummode {
-          bd4_\mf sn8 bd bd4 sn
+          bd4 sn8 bd bd4 sn
           bd4 sn8 bd8 bd4 sn
           \break
           bd4 sn8 bd8 bd4 sn
@@ -212,7 +212,7 @@ global = {
       \new DrumVoice {
         \voiceTwo
         \drummode {
-          bd4_\mf sn8 sn bd bd sn4
+          bd4 sn8 sn bd bd sn4
           bd4 sn8 sn bd bd sn4
           \break
           bd4 sn8 sn bd bd sn4
@@ -246,7 +246,7 @@ global = {
       \new DrumVoice {
         \voiceTwo
         \drummode {
-          bd4_\mf sn8 bd r4 sn
+          bd4 sn8 bd r4 sn
           bd4 sn8 bd8 r4 sn
           \break
           bd4 sn8 bd8 r4 sn
@@ -282,7 +282,7 @@ global = {
       \new DrumVoice {
         \voiceTwo
         \drummode {
-          bd4_\mf sn r8 bd sn4
+          bd4 sn r8 bd sn4
           bd4 sn r8 bd sn4
           \break
           bd4 sn r8 bd sn4
@@ -316,7 +316,7 @@ global = {
       \new DrumVoice {
         \voiceTwo
         \drummode {
-          bd4_\mf <bd sn> bd <bd sn>
+          bd4 <bd sn> bd <bd sn>
           bd4 <bd sn> bd <bd sn>
           \break
           bd4 <bd sn> bd <bd sn>
@@ -350,7 +350,7 @@ global = {
       \new DrumVoice {
         \voiceTwo
         \drummode {
-          bd4\mf sn bd sn
+          bd4 sn bd sn
           bd4 sn bd sn
           \break
           bd4 sn bd sn
