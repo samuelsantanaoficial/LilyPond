@@ -57,6 +57,7 @@
 \markup \vspace #1
 
 \score {
+  %\unfoldRepeats
   <<
     \new ChordNames {
       \chordmode {

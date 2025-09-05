@@ -119,6 +119,7 @@ alto = {
 }
 
 \score {
+  %\unfoldRepeats
   \new StaffGroup <<
     \new Staff <<
       \set Staff.midiInstrument = #"acoustic guitar (nylon)"

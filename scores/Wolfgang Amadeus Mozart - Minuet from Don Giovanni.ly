@@ -86,6 +86,7 @@ alto = \relative {
 }
 
 \score {
+  %\unfoldRepeats
   \new StaffGroup <<
     \new Staff <<
       \set fingeringOrientations = #'(left)
