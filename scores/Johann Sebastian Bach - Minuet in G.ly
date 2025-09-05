@@ -1,5 +1,7 @@
 \version "2.24.4"
 
+\include "data/guitar.ly"
+
 #(set-global-staff-size 18)
 
 \paper {
