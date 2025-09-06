@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-\include "data/guitar.ly"
+\include "data/my-guitar-style.ly"
 
 #(set-global-staff-size 18)
 

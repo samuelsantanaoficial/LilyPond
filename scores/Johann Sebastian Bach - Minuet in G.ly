@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-\include "data/guitar.ly"
+\include "data/my-guitar-style.ly"
 
 #(set-global-staff-size 18)
 
@@ -123,7 +123,7 @@ alto = {
 \score {
   %\unfoldRepeats
   \new StaffGroup <<
-    \new Staff <<
+    \new Staff << 
       \set Staff.midiInstrument = #"acoustic guitar (nylon)"
       \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
       \time 3/4
