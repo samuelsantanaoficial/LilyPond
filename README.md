@@ -27,3 +27,10 @@ Usando o `my-drum-style-table.ly`
 **Downloads:**
 [![PDF](https://img.shields.io/badge/PDF-Standard_Kit-red?logo=adobeacrobatreader)](https://github.com/samuelsantanaoficial/LilyPond/raw/main/pdf/Standard%20Kit.pdf?download=1)
 [![SOURCE](https://img.shields.io/badge/SOURCE-Standard_Kit.ly-yellow)](https://github.com/samuelsantanaoficial/LilyPond/raw/main/scores/Standard%20Kit.ly?download=1)
+
+### Partitura para Violão Clássico
+Usando o `my-guitar-style.ly`
+
+**Downloads:**
+[![PDF](https://img.shields.io/badge/PDF-Classic-red?logo=adobeacrobatreader)](https://github.com/samuelsantanaoficial/LilyPond/raw/main/pdf/Classic%20Guitar.pdf?download=1)
+[![SOURCE](https://img.shields.io/badge/SOURCE-Classic_Guitar.ly-yellow)](https://github.com/samuelsantanaoficial/LilyPond/raw/main/scores/Classic%20Guitar.ly?download=1)
