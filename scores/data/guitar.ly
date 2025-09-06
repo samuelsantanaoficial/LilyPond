@@ -1,3 +1,5 @@
+\version "2.24.4"
+
 barre = #(define-music-function (txt notes) (string? ly:music?) #{
   \once \override TextSpanner.bound-details.left.text = \markup { \bold \upright \concat { #txt " " } }
   \once \override TextSpanner.bound-details.right.text = \markup { \draw-line #'(0 . -1) }
