@@ -1,2 +1,2 @@
-- [my-guitar-fretboards.ly](https://github.com/samuelsantanaoficial/LilyPond/raw/main/caminho/scores/data/my-guitar-fretboards.ly?download=1)
+- [my-guitar-fretboards.ly](https://github.com/samuelsantanaoficial/LilyPond/raw/main/scores/data/my-guitar-fretboards.ly?download=1)
 - [my-guitar-fretboards.ly](https://github.com/samuelsantanaoficial/LilyPond/releases/latest/download/my-guitar-fretboards.ly)
