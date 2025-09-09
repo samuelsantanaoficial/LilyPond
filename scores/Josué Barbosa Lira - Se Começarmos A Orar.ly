@@ -1,5 +1,8 @@
 \version "2.24.4"
 
+\include "data/my-guitar-fretboards.ly"
+\include "data/my-guitar-style.ly"
+
 #(set-global-staff-size 18)
 
 \paper {
@@ -10,8 +13,6 @@
   right-margin = 12\mm
   system-system-spacing.basic-distance = #16
 }
-
-\include "data/my-guitar-fretboards.ly"
 
 \header {
   title = "Se Começarmos A Orar"
@@ -31,11 +32,11 @@
           }
         }
         \new FretBoards \with {
-          \override FretBoard.size = #1.3
-          \override FretBoard.fret-diagram-details.fret-count = #4
-          \override FretBoard.fret-diagram-details.barre-type = #'straight
-          \override FretBoard.fret-diagram-details.number-type = #'arabic
-          \override FretBoard.fret-diagram-details.dot-radius = #0.3
+          \fretsize #1.3
+          \minfrets #4
+          \barretype #'straight
+          \numbertype #'arabic
+          \dotradius #0.3
           \remove "Bar_number_engraver"
         } {
           \chordmode {
